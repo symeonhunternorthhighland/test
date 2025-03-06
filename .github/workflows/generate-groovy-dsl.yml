@@ -1,0 +1,21 @@
+# This workflow will run the generate bash script to generate the latest version of the groovy seed job and commit the updated file.
+
+name: generate-groovy-file
+on:
+  pull_request:
+    branches:
+      - "main"
+jobs:
+  run-generate-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v3
+
+      - name: Run Script to Generate Groovy File
+        run: ./pipelines/jenkins-handlers/generate-seed-dsl.sh
+
+      - name: Commit Groovy File
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-generated groovy file from push/PR creation"

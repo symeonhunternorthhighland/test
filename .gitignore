@@ -1,0 +1,14 @@
+.idea
+*.iml
+*.code-workspace
+node_modules
+.env
+.vscode/
+package.lock
+package-lock
+.DS_Store
+src/logs
+output
+_output
+out
+*.log

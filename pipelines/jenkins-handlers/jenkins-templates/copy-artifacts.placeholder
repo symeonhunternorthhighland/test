@@ -1,0 +1,6 @@
+    copyArtifacts('<JOB_NAME>') {
+      includePatterns('<INCLUDE_PATTERN>')
+      buildSelector {
+          lastWithArtifacts()
+      }
+    }

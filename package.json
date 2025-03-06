@@ -1,0 +1,26 @@
+{
+  "name": "automation_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "remote": "npx codeceptjs run --profile remote",
+    "local": "npx codeceptjs run --profile local"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.6.7",
+    "codeceptjs-bshelper": "^3.1.3",
+    "webdriverio": "^9.1.1"
+  },
+  "dependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "@codeceptjs/configure": "^1.0.1",
+    "@codeceptjs/helper": "^2.0.4",
+    "@wdio/browserstack-service": "^9.1.2",
+    "browserstack-local": "^1.5.5",
+    "dotenv": "^16.4.5"
+  }
+}
