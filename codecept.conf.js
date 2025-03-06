@@ -7,7 +7,7 @@ const build = process.env.BROWSERSTACK_BUILD_NAME;
 exports.config = {
   helpers: {
     WebDriver: {
-      url: "{{BASE_URL}}",
+      url: "https://hsd--uat.sandbox.my.site.com/nmhr/s/yesnm-home-page?language=en_US",
       //MicrosoftEdge//firefox//chrome
       browser: "chrome",
       restart: true,
@@ -81,5 +81,5 @@ exports.config = {
     },
   },
   tests: "./features/**/*.feature",
-  name: "{{PROJECT_NAME}}",
+  name: "test",
 };
